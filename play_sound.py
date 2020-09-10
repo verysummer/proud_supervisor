@@ -6,7 +6,7 @@ import RPi.GPIO as GPIO # Import Raspberry Pi GPIO library
 # setuo gpio
 pin = 23
 GPIO.setwarnings(False) # Ignore warning for now
-GPIO.setmode(GPIO.BCM) # not Use physical pin numbering
+GPIO.setmode(GPIO.BCM) # pin numbering
 GPIO.setup(pin, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
 
 
@@ -17,13 +17,10 @@ while True:
     #input("waiting for input")
     if GPIO.input(pin) == GPIO.HIGH:
         print("pushed")
-#    else:
-#        print("nope")
 
-        # if list of sounds is empty, make list with all sounds
+        # if list of sounds is (almost) empty, make list with all sounds
         if len(prouds) == 1:
             print('is empty; make new one')
-            #os.chdir('sounds')
             prouds = os.listdir('sounds')
         else:
             print('not empty yet')
@@ -41,9 +38,9 @@ while True:
         pygame.mixer.music.play()
 
         # Play sound and wait until completed
-        # print('Starting to play the WOW')
-        # while pygame.mixer.music.get_busy() == True:
-        #     continue
-        # print('Done playing the WOW')
+        print('Starting to play')
+        while pygame.mixer.music.get_busy() == True:
+            continue
+        print('Done playing the sound')
 
 
