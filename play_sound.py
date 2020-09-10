@@ -13,6 +13,11 @@ GPIO.setup(pin, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
 random.seed
 prouds = ['nothing in here']
 
+# Example code to show that mock works on computer
+GPIO.setwarnings(False)
+GPIO.setmode(GPIO.BOARD)
+GPIO.setup(10, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
+
 while True:
     #input("waiting for input")
     if GPIO.input(pin) == GPIO.HIGH:
@@ -42,5 +47,3 @@ while True:
         while pygame.mixer.music.get_busy() == True:
             continue
         print('Done playing the sound')
-
-
