@@ -1,4 +1,3 @@
-import RPi.GPIO as GPIO  # Import Raspberry Pi GPIO library
 import pygame
 import os
 import random
