@@ -1,6 +1,6 @@
 # proud_supervisor
 
-## make your supervisor proud by nothing more than a push of a button -- you deserve it!
+### __make your supervisor proud by nothing more than a push of a button -- you deserve it!__
 
 ### ways to start the proud supervisor:
 1. unplug and plug back in, or
@@ -24,7 +24,11 @@
 
 ### output log saved in: logs/play_sound_log
 
-start program upon start with crontab (set to regularly do stuff)
+### start program upon start with crontab (set to regularly do stuff)
 `sudo crontab -e`
 add in crontab:
 `@reboot sh /home/pi/src/proud_supervisor/launcher.sh > /home/pi/logs/cronlog 2>&1`
+
+
+### see also:
+https://raspberrypihq.com/use-a-push-button-with-raspberry-pi-gpio/ 
