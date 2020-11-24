@@ -2,6 +2,8 @@
 
 ### __make your supervisor proud by nothing more than a push of a button -- you deserve it!__
 
+<a href="https://ibb.co/V2VXpyQ"><img src="https://i.ibb.co/ZWdy1sY/IMG-20201117-142653.jpg" alt="IMG-20201117-142653" border="0"></a>
+
 ### ways to start the proud supervisor:
 1. unplug and plug back in, or
 2. python play_sound.py, or
